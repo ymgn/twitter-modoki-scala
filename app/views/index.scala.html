@@ -1,0 +1,16 @@
+@import com.github.ymgn.twitter.domain.tweet.entity._
+@(tweets: Seq[Tweet])
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Twitterもどき</title>
+</head>
+<body>
+    <dev>
+        @tweets.map { tweet =>
+            <span>@tweet.message</span>
+        }
+    </dev>
+</body>
+</html>
